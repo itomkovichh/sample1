@@ -1,0 +1,68 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: url("https://ams03pap001files.storage.live.com/y4mi1DSYtg-iD1ERRqwFLJf_Fjn5zyny6n5EVJ3v5hHVy4uB_W8FB-XBiS0ypLU-n8SAPlAfU8M_x6ZSvqC4AHf40TEOJ7KQ1DOsfOSmgCYZyVGD9VWVnrMcefMUhIY2N1xFA4nXyWv2SrrKmPStWykq0sd59TqYXFHYEQVhCdOj_uaF5T9Rn-SySwG21uk-H2zUoIa8sepjQ8ptsvZZ1FMdA?encodeFailures=1&width=1881&height=1351") repeat;
+  padding: 20px;
+  background-size: contain;
+  font-size: 25px;
+  color: white;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+
